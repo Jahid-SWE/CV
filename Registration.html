@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+	<link rel="stylesheet" type="text/css" href="Style.css">
+	<script type="text/javascript" src="jahid.js"> </script>
+	<!--<style>
+		input{
+			width: 200px;
+		}
+		select{
+			width: 200px;
+		}
+		.redio{
+			width: 30px;
+
+		}
+		.id{
+			position: fixed
+			float: left;
+			position: relative;
+			
+		}
+		#right{
+			float: left;
+			overflow: hidden;
+			position: relative;
+			
+		}
+	</style>-->
+</head>
+<body >
+	<div  class="container">
+		<div class="Registration">
+			
+				
+			<h1 align="center"> Registration</h1>
+		    <form name="registrationForm" action="reg.php" method="post" >
+		   <input type="text" name="FullName" placeholder="Enter Full Name" onchange="return checkNameLength();" required><br><br>
+		    <input type="text" name="email" placeholder="Enter email" required><br><br>
+		    <input type="password" name="password" placeholder="password" required><br><br>
+		    <input type="password" name="confirm" placeholder="Re-password" onchange="return checkPassword();" required><br><br>
+		    <input type="number" name="age" min="18" max="60" placeholder="Age" onchange="return checkAge();" required><br><br>
+
+		    <select  class="DropdownList" name="religion" required>
+		     <option >Islam</option>
+		     <option >Hindus</option>
+		     <option >Christians</option>
+		     <option >Buddhists</option>
+		     <option>Other</option>
+		    </select><br><br>
+
+		     <input class="Redio" type="radio" name="gender" value="male" checked>Male
+		      <input class="Redio" type="radio" name="gender" value="female">Female
+		     <input class="Redio" type="radio" name="gender" value="Other">Other <br><br>
+		     <input class="Checkbox" id="ckBox" type="checkbox" name="vehicle1" required="">I agree <a>Terms & Condition</a><br><br>
+		     <input type="test" name="code" placeholder="Write something about code" required><br><br>&emsp;&emsp;
+
+		     <input class="RegistrationButton" type="submit" name="registration"  onclick="return check();" value="Registration">
+
+		     </form>
+		</div>
+		<div class="Login">
+
+			<form action="logIn.php" method="post"><br><br>
+				<h1>LogIn Form</h1>
+			<input type="text" name="email" placeholder="Enter email" required><br><br>
+		    <input type="password" name="password" placeholder="password" required><br><br> &emsp; &emsp;
+		    <input class="LoginButton" type="submit" name="login" value="Login">
+			</form>
+			
+		</div>
+</div>
+</body>
+</html>

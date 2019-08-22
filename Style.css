@@ -1,0 +1,55 @@
+body{
+	margin: 5px;
+	padding: 0;
+	background: #efefef;
+}
+
+
+
+input{
+	width:200px;
+}
+
+.DropdownList{
+	width: 204px;
+}
+
+.Redio{
+	width:16px;
+}
+
+.Checkbox{
+width: 18px;
+}
+.Registration{
+	padding-left: 50px;
+	float: left;
+}
+
+.RegistrationButton{
+	width:100px;
+	height:35px;
+	background-color:green;
+	border-radius: 10px;
+
+}
+.container{
+	background-color: #7F8C8D  ;
+	height: 1000px;
+}
+
+.LoginButton{
+	width:100px;
+	height:35px;
+	background-color:green;
+	border-radius: 10px;
+
+}
+.Login{
+
+
+	padding-left: 270px;
+	padding-top: 23px;
+	
+
+}
